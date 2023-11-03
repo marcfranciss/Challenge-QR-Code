@@ -12,9 +12,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    @media (max-width:1440px) {
-      body{
-      font-family: 'Outfit', sans-serif;
+    body{
+      font-family: Outfit, sans-serif;
       /* background-color: aqua; */
       background-image: url("images/qr-bg.png");
       background-repeat: no-repeat;
@@ -25,10 +24,11 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      width: 90%;
-      height: 850px;
+      width: 100%;
+      height: 800px;
+      /* height: 1000%; */
       margin: 0 auto;
-      padding-top: 100px;
+      padding-top: 52px;
       /* padding: 0px 75px; */
     }
     .attribution { font-size: 11px; text-align: center; }
@@ -40,8 +40,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 800px;
-      width: 1220px;
+      /* height: 800px;
+      width: 1220px; */
+      height: 80%;
+      width: 80%;
+      margin: 0 auto;
 
       /* padding: 170px 417px; */
     }
@@ -71,16 +74,18 @@
       color: hsl(220, 15%, 55%);
       font-size: 18px;
     }
-  }
     /* Media Query */
-    @media (max-width: 769px) {
+    @media (max-width: 768px) and (min-width:376px){
       body {
         background-image: none;
         background-color: hsl(212, 45%, 89%);
       }
       .qr-container{
         padding: 0;
-        width: 320px;
+        width: 80%;
+        height: 550px;
+      }
+      .qr-outer {
         height: 600px;
       }
     }
@@ -92,7 +97,7 @@
       .qr-container{
         padding: 0;
         width: 320px;
-        height: 600px;
+        height: 80%px;
       }
     }
   </style>
